@@ -850,7 +850,17 @@ input[type="checkbox"]:focus-visible + .order-form-checkbox {
   max-width: 1440px;
   margin: 0 auto;
 }
-
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(
+        var(--hero-overlay-bg-color),
+        var(--hero-overlay-bg-color)
+      ),
+      url(../images/people-office2x.jpg);
+  }
+}
 .hero-title {
   color: var(--text-light-color);
   text-align: center;
