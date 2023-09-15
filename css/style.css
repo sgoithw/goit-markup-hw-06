@@ -822,7 +822,7 @@ img {
 }
 input[type="checkbox"]:checked + label > .order-form-checkbox {
   background-color: var(--active-color);
-  border: none;
+  border-color: var(--active-color);
   fill: var(--main-light-color);
 }
 
