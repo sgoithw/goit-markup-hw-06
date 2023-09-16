@@ -114,9 +114,13 @@ img {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
-
+@media only screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+}
 .list {
   list-style: none;
   margin: 0;
@@ -536,6 +540,7 @@ img {
 @media only screen and (min-width: 1158px) {
   .footer-quote {
     margin-right: 120px;
+    margin-bottom: 0;
   }
 }
 .footer-socials {
@@ -544,6 +549,7 @@ img {
 @media only screen and (min-width: 1158px) {
   .footer-socials {
     margin-right: 80px;
+    margin-bottom: 0;
   }
 }
 .footer-section-title {
@@ -869,7 +875,7 @@ input[type="checkbox"]:focus-visible + .order-form-checkbox {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 188px 0px;
+  padding: 112px 0px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -923,6 +929,7 @@ input[type="checkbox"]:focus-visible + .order-form-checkbox {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 188px 0px;
   }
 }
 @media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
@@ -974,7 +981,17 @@ input[type="checkbox"]:focus-visible + .order-form-checkbox {
 .advantages-list {
   display: flex;
   flex-flow: wrap;
-  gap: 24px;
+  gap: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .advantages-list {
+    gap: 72px 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .advantages-list {
+    gap: 24px;
+  }
 }
 
 .advantages-list-item {
@@ -1047,6 +1064,7 @@ input[type="checkbox"]:focus-visible + .order-form-checkbox {
 @media only screen and (min-width: 1158px) {
   .services {
     display: block;
+    padding-top: 0;
   }
 }
 
@@ -1209,7 +1227,6 @@ input[type="checkbox"]:focus-visible + .order-form-checkbox {
   border-radius: 4px;
   border: 1px solid var(--border-dark-color);
   color: var(--border-dark-color);
-  padding: 16px 32px;
   transition: border-color var(--default-transition),
     color var(--default-transition);
 }
