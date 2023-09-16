@@ -622,7 +622,7 @@ img {
     width: 264px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1158px) {
   .footer-subscribe-form-input {
     opacity: 1;
   }
@@ -882,6 +882,9 @@ input[type="checkbox"]:focus-visible + .order-form-checkbox {
         var(--hero-overlay-bg-color)
       ),
       url(../images/people-office2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 .hero-title {
